@@ -1,0 +1,51 @@
+.user-client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+  &__team {
+    @extend %flex-justify-content;
+  }
+
+  &__list {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__icon {
+    justify-content: center;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: var(--color-icons);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+      fill: var(--activ-color);
+    }
+  }
+
+  &__user-icon {
+    margin: 16px 32px;
+  }
+}

@@ -1,0 +1,16 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --activ-color: #2196f3;
+  --color-header: #000000;
+  --color-text-reserve: #ffffff;
+  --color-footer-contacts: rgba(255, 255, 255, 0.6);
+  --color-icons: #afb1b8;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: var(--title-text-color);
+}

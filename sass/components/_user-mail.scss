@@ -1,0 +1,79 @@
+.user-mail {
+  margin-top: 12px;
+  margin-left: 93px;
+
+  &__form {
+    display: flex;
+  }
+
+  &__label {
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  &__input {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--color-footer-contacts);
+    height: 50px;
+    width: 358px;
+    padding-left: 16px;
+    background-color: #2f303a;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:valid {
+      border-color: var(--activ-color);
+    }
+    &:invalid {
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+    &:focus {
+      border-color: var(--activ-color);
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--activ-color);
+    border-radius: 4px;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    font-family: inherit;
+    color: var(--color-text-reserve);
+    background-color: #2196f3;
+    border-color: var(--activ-color);
+    letter-spacing: 0.06em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border-color: var(--activ-color);
+    }
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,50 @@
+.heading-features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__section {
+    display: block;
+    margin-left: auto;
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    &-svg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &__title {
+    display: block;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  &__text {
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+  }
+}
