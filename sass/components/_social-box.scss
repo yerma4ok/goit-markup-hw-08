@@ -1,12 +1,15 @@
 .social-box {
-  margin-top: 12px;
-  margin-left: 70px;
+  // margin-top: 12px;
+  // margin-left: 70px;
+  align-items: center;
+  margin-bottom: 60px;
 
   &__title {
     display: block;
     margin: 0;
-    text-align: left;
-    padding-bottom: 20px;
+    text-align: center;
+    // text-align: left;
+    margin-bottom: 20px;
 
     font-weight: 700;
     font-size: 14px;
