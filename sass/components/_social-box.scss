@@ -2,7 +2,16 @@
   // margin-top: 12px;
   // margin-left: 70px;
   align-items: center;
-  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+   margin-top: -42px;
+   }
+   @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-top: 12px;
+    
+    }
+  
+ 
 
   &__title {
     display: block;
@@ -17,6 +26,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-text-reserve);
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+  
+      }
   }
 
   &__team {
