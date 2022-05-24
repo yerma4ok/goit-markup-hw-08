@@ -40,11 +40,6 @@ body {
   margin: -1px;
 }
 
-.contacts-list__info {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .social-box__icon, .social-box__team, .team-box__icon, .team-box__social {
   display: flex;
   justify-content: center;
@@ -119,17 +114,17 @@ body {
 
 .header-div {
   display: flex;
-  align-items: center;
 }
 
 .header-container {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav {
   display: flex;
   margin-left: 93px;
-  align-items: baseline;
 }
 @media screen and (max-width: 767px) {
   .site-nav {
@@ -192,7 +187,7 @@ body {
   width: 100%;
   background-color: #2196f3;
   border-radius: 2px;
-  margin-top: 30px;
+  margin-top: 28px;
   display: block;
   position: absolute;
 }
@@ -206,12 +201,29 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 1199px) {
+  .contacts, .contacts-list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    margin-top: 32px;
+  }
+}
 .contacts-list > .iten {
   display: flex;
   align-items: center;
 }
 .contacts-list__iten:not(:last-child) {
   margin-right: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .contacts-list__iten:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-top: 21px;
+  }
 }
 .contacts-list__header-icon {
   margin-right: 10px;
@@ -226,6 +238,14 @@ body {
   text-decoration: none;
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .contacts-list__info {
+    font-size: 12px;
+    line-height: 1.17;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
 }
 .contacts-list__info:hover, .contacts-list__info:focus {
   color: var(--activ-color);
