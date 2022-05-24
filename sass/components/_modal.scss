@@ -3,8 +3,8 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
@@ -12,6 +12,10 @@
   left: 50%;
   transition: transform 250ms;
   transform: translate(-50%, -50%) scale(1) rotateY(0);
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close-btn {
@@ -48,6 +52,7 @@
   color: var(--title-text-color);
   top: 40px;
   left: 40px;
+  right: 40px;
   margin: 0 0 12px 0;
   padding: 0;
 }
@@ -64,8 +69,13 @@
 }
 
 .modal__user-name {
-  margin-top: 75px;
+  margin-top: 112px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 75px;
+  }
+
 }
+
 
 .modal__input-div {
   position: relative;
@@ -74,7 +84,8 @@
 
 .modal__input {
   box-sizing: border-box;
-  width: 448px;
+  // width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -98,13 +109,17 @@
       fill: var(--activ-color);
     }
   }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .modal__text {
   position: relative;
-  margin: 0 40px 10px 40px;
+  margin: 0 40px;
   display: flex;
-  width: 448px;
+  // width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -128,20 +143,34 @@
   &:focus {
     border-color: var(--activ-color);
   }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .modal__field-div {
   position: relative;
-  margin: 20px 40px 30px 54px;
+  // margin: 20px 40px 30px 54px;
+  margin: 20px 40px 30px 40px;
+  @media screen and (min-width: 1200px) {
+    margin: 20px 40px 30px 54px;
+  }
 }
 
 .modal__chek-text {
   display: flex;
-  align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  // align-items: center;
+  align-items: baseline;
+  // font-size: 14px;
+  // line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   &::before {
     content: "";
@@ -161,23 +190,26 @@
   &-link {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--activ-color);
     text-decoration-line: underline;
     margin-left: 4px;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
+  
 }
 
 .modal__button-chek {
   display: inline-block;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
   border: 2px solid var(--activ-color);
   border-radius: 4px;
-  margin-left: 165px;
+  // margin-left: 165px;
+  margin-left: 125px;
   padding: 0;
   width: 200px;
   height: 50px;
@@ -199,5 +231,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-color: var(--activ-color);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 165px;
   }
 }
