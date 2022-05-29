@@ -19,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    height: auto;
     margin-bottom: 30px;
     flex-grow: 0;
     flex-shrink: 0;
@@ -31,9 +32,9 @@
       width: 450px;
     }
     @media screen and (min-width: 768px) {
-      width: calc(100% / 2 - 30px);
+      width: 354px;
       margin-right: 30px;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
       &:nth-child(2n) {
         margin-right: 0;
       }
@@ -42,8 +43,8 @@
       }
     }
     @media screen and (min-width: 1200px) {
-      width: calc(100% / 4 - 30px);
-      margin-right: 30px;
+      width: 270px;
+      // margin-right: 30px;
       margin-bottom: 0;
       &:nth-child(4) {
         margin-right: 0;

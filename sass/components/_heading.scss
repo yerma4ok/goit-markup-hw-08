@@ -1,6 +1,9 @@
 .heading {
   background-color: #c4c4c4;
   padding-top: 118px;
+  padding-bottom: 118px;
+  height: 400px;
+  width: 100%;
   flex-grow: 1;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,8 +26,9 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 600px;
-    padding-top: 200px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -46,6 +50,7 @@
   @media screen and (min-width: 1200px) {
     height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -84,12 +89,12 @@
     color: var(--color-text-reserve);
     letter-spacing: 0.06em;
     @media screen and (min-width: 480px) {
-      margin-left: 60px;
-      margin-right: 60px;
+      margin-left: 45px;
+      margin-right: 45px;
     }
     @media screen and (min-width: 768px) {
-      margin-left: 204px;
-      margin-right: 204px;
+      margin-left: 189px;
+      margin-right: 189px;
     }
     @media screen and (min-width: 1200px) {
       margin-left: 252px;
@@ -105,6 +110,7 @@
     text-align: center;
     border: 2px solid var(--activ-color);
     border-radius: 4px;
+  
     //  margin: 0 485px;
 
     width: 200px;

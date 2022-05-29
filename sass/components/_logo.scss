@@ -1,20 +1,14 @@
 .logo {
   text-decoration: none;
   // display: flex;
-  margin-top: 16px;
+ 
 
 
   font-family: "Raleway", sans-serif;
   @include font-styles(24px, 1.17, 700, 0.03em);
   color: var(--activ-color);
 
-  @media screen and (min-width: 768px) {
-    margin-top: 26px;
- }
- @media screen and (min-width: 1200px) {
-    @include font-styles(26px, 1.19, 700, 0.03em);
-    margin-top: 24px;
- }
+ 
 
   &__title {
     color: var(--color-header);
